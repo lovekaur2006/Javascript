@@ -1,0 +1,71 @@
+<!-- DOM Document Object model is a programming interface that represents the structure of a webpage. It allows JavaScript to interact with HTML elements on the page. The DOM works by creating a tree-like structure of the HTML elements, where each element is represented as a node. This allows you to manipulate and modify the content and apperence of the web page dynamically using Javascript. -->
+
+<!-- //DOM Methods -->
+<!-- getElementById() -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>My First page</h2>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML = "Hello World";
+    </script>
+</body>
+
+</html>
+
+<!-- getElementByClassName() -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>getElementByClassName</h2>
+    <div class="firstClass">Hey</div>
+    <div class="firstClass">Hello</div>
+    <div class="firstClass">Hi</div>
+    <script>
+        const divs = document.getElementsByClassName("firstClass");
+        console.log(divs);
+
+    </script>
+</body>
+
+</html>
+
+<!-- getElementByName -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>getElementByName</h2>
+    <input type="text" name="AlphaIntern">
+    <input type="number" name="AlphaIntern">
+    <script>
+        const inputs = document.getElementsByName("AlphaIntern");
+        console.log(inputs);
+        console.log(inputs[1]);
+    </script>
+</body>
+
+</html>
+
+
